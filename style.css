@@ -5,9 +5,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #f1f5f9;
     color: #1e293b;
+    min-height: 100vh;
 }
 
 /* HEADER */
@@ -302,4 +305,8 @@ tr:hover {
 .topico:hover {
     border-left-color: #2ecc71; /* Muda para verde ao interagir */
     transition: 0.3s;
+}
+
+.materiais {
+    flex: 1;
 }
