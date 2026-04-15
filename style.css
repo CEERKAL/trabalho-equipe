@@ -1,1 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+/* NAV */
+nav {
+    background: #4338ca;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SEÇÕES */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* CARD */
+.card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    background: linear-gradient(145deg, #ffffff, #f5f7fa);
+    padding: 24px;
+    border-radius: 16px;
+    flex: 1;
+    min-width: 260px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* hover card */
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* titulo card */
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* texto card */
+.card p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* SOBRE */
+.sobre {
+    background: #e0e7ff;
+    border-radius: 12px;
+}
+
+/* FORMULARIO */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+/* FOOTER */
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* FERRAMENTAS */
+
+/* Espaçamento 1 */
+.categoria-ferramentas {
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+/* Estilização titulo */
+.categoria-ferramentas h3 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Configuração lista */
+.categoria-ferramentas ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Espaçamento 2 */
+.categoria-ferramentas li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilização dos links */
+.categoria-ferramentas a {
+    text-decoration: none;
+    color: #007bff;
+    transition: 0.2s;
+}
+
+.categoria-ferramentas a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* MATERIAL 1 */
+.manual-nota10 {
+    background-color: #f0f4f8;
+    padding: 30px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color: #1a1a1a;
+}
+
+.topico h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0d1117;
+}
+
+.topico p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+}
+
+/* MATERIAL 2 */
+.manual-rotina {
+    background-color: #f4f7f6;
+    padding: 30px;
+    border-radius: 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.exemplo-agenda {
+    margin-top: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.exemplo-agenda h3 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.dica-agenda {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+}
+
+/* MATERIAL 3 */
+.manual-selva {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #f8fbff; /* Azul clarinho sutil */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.topico {
+    margin-bottom: 35px;
+    border-left: 4px solid #3498db; /* Barra de destaque lateral */
+    padding-left: 20px;
+}
+
+.topico h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.topico p {
+    font-size: 1.1rem;
+    color: #546e7a;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.topico:hover {
+    border-left-color: #2ecc71; /* Muda para verde ao interagir */
+    transition: 0.3s;
+}
